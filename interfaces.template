@@ -1,0 +1,27 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+auto lo
+iface lo inet loopback
+
+iface enp0s25 inet manual
+
+auto br0
+iface br0 inet static
+  hwaddress ether [MAC]
+  # TODO tokenize the address
+  address 192.168.0.60
+  netmask 255.255.255.0
+  gateway 192.168.0.1
+
+  # TODO tokenize the interface name
+  bridge_ports enp0s25
+  # no idea what these do:
+  # bridge_stp off
+  # bridge_fd 0
+
+# TODO ipv6
+# iface br0 inet6 static
+#   address [SOMEADDR]
+#   netmask 64
+#   gateway [SOMEGTWY]
+#   autoconf 0
+
