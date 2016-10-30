@@ -36,9 +36,9 @@ if
 fi
 
 echo -e "\e[1;32mInstalling qemu-kvm and libvirt-bin\e[0m"
-#sudo apt install qemu-kvm libvirt-bin
+sudo apt install qemu-kvm libvirt-bin
 echo -e "\e[1;32mAdding $USER to group libvirtd...\e[0m"
-#sudo adduser $USER libvirtd
+sudo adduser $USER libvirtd
 echo -e "\e[1;32mCopying install-kvm.service to systemd...\e[0m"
 sudo cp "install-kvm.service" /lib/systemd/system/
 echo -e "\e[1;32mRebooting...\e[0m"
