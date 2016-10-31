@@ -1,6 +1,8 @@
 bash-cm
 =======
 
+This stub has been discontinued and added to a branch in [navaja-cm](https://github.com/chaim1221/navaja-cm/tree/kvm-chef)!
+
 Adventures in managing dom0 with automated scripts
 --------------------------------------------------
 
